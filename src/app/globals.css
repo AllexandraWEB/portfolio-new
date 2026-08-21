@@ -164,7 +164,7 @@
   @apply 
    text-[36px] leading-13 font-normal tracking-[-8%]
    md:text-[52px] md:leading-14 
-   xl:text-[187px] xl:leading-23 
+   xl:text-[257px] xl:leading-23 
    2xl:text-[292px] 2xl:leading-23 2xl:tracking-[-9%];
 }
 /* 187 */
@@ -172,7 +172,7 @@
   @apply 
    text-[36px] leading-13 font-normal
    md:text-[52px] md:leading-14 
-   xl:text-[187px] xl:leading-23 
+   xl:text-[257px] xl:leading-23 
    2xl:text-[292px] 2xl:leading-23;
 }
 
@@ -364,4 +364,9 @@
       }
     }
   }
+}
+
+.line {
+  transform: translateY(100%);
+  will-change: transform;
 }
