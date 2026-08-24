@@ -1,5 +1,4 @@
 import Container from '@/src/components/container'
-import React from 'react'
 import AnimatedCTA from '../animated-button'
 
 const HeroSection = () => {
