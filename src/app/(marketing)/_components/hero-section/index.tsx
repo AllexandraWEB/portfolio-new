@@ -1,4 +1,4 @@
-import Container from '@/src/components/container'
+import Container from '@/src/components/(layout)/container'
 import AnimatedCTA from '../animated-button'
 
 const HeroSection = () => {
@@ -15,7 +15,7 @@ const HeroSection = () => {
                     </div>
                 </div>
 
-                <div className="mt-auto pb-10 grid grid-cols-4">
+                <div className="mt-auto pb-10 grid grid-cols-1 xl:grid-cols-4">
                     <div className="flex flex-col gap-4">
                         <h3 className="uppercase text-sm-regular">
                             Front-end Engineer
@@ -28,7 +28,7 @@ const HeroSection = () => {
 
                     <div></div>
 
-                    <div>
+                    <div className="mt-4 xl:mt-0">
                         <AnimatedCTA text="See my work" />
                     </div>
                 </div>

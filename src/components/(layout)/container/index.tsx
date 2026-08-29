@@ -21,7 +21,7 @@ export default function Container({
     <div className={outer} id={id}>
       <Component
         className={cn(
-          `container max-w-360 mx-auto`,
+          `container max-w-360 px-4 xl:px-0 mx-auto`,
           global ? "flex flex-col gap-24" : "",
           className
         )}

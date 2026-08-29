@@ -161,15 +161,17 @@
 
 /* Display */
 @utility display-sm-regular-tracking {
-  @apply text-[36px] leading-13 font-normal tracking-[-8%]
-   md:text-[52px] md:leading-14 
+  @apply text-[82px] leading-13 font-normal tracking-[-8%]
+   md:text-[160px] md:leading-14 
+   lg:text-[210px]
    xl:text-[257px] xl:leading-23 
    2xl:text-[292px] 2xl:leading-23 2xl:tracking-[-9%];
 }
 /* 187 */
 @utility display-sm-regular-no-tracking {
-  @apply text-[36px] leading-13 font-normal
-   md:text-[52px] md:leading-14 
+  @apply text-[82px] leading-13 font-normal
+   md:text-[160px] md:leading-14 
+   lg:text-[210px] lg:leading-[100%]
    xl:text-[257px] xl:leading-23 
    2xl:text-[292px] 2xl:leading-23;
 }
@@ -183,8 +185,8 @@
 }
 
 @utility headline-h1 {
-  @apply text-[48px] leading-[100%] font-semibold tracking-[-0.04em]
-    md:text-[52px] md:leading-[100%]
+  @apply text-[28px] leading-[100%] font-semibold tracking-[-0.04em]
+    md:text-[44px] md:leading-[100%]
     xl:text-[64px] xl:leading-[100%];
 }
 
@@ -226,13 +228,13 @@
 
 /* Eyebrows */
 @utility eyebrow {
-  @apply text-sm leading-[130%] font-bold tracking-[0.02em]
+  @apply text-sm leading-[130%] font-normal tracking-[0.02em]
     md:text-sm md:leading-[130%]
     xl:text-base xl:leading-[130%];
 }
 
 @utility eyebrow-small {
-  @apply text-xs leading-[130%] font-bold tracking-[0.02em]
+  @apply text-xs leading-[130%] font-normal tracking-[0.02em]
     md:text-xs md:leading-[130%]
     xl:text-xs xl:leading-[130%];
 }

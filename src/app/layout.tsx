@@ -2,8 +2,7 @@ import { GeistSans } from 'geist/font/sans'
 
 import "./globals.css"
 import { ThemeProvider } from "@/src/components/theme-provider"
-import { cn } from "@/src/lib/utils";
-import { GridOverlay } from "@/src/components/grid-overlay";
+import { GridOverlay } from "@/src/components/(layout)/grid-overlay";
 
 
 export default function RootLayout({
