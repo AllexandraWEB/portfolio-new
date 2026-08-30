@@ -14,12 +14,20 @@ const SVGSection = () => {
             <ReactLenis root>
                 <div className="bg-black pt-3">
                     {isMobile && (
-                        <div>
-                            <div>
-                                <img src="/assets/svg/WhiteShape.svg" alt="White Shape" className="w-full h-auto" />
+                        <div className="py-8 text-white">
+                            <div className="space-y-10">
+                                <div className="flex flex-col items-center justify-center space-y-4">
+                                    <h1 className="display-sm-regular-tracking">Education.</h1>
+                                    <h1 className="display-sm-regular-tracking">Education.</h1>
+                                    <h1 className="display-sm-regular-tracking">Education.</h1>
+                                </div>
+                                <div>
+                                    <img src="/assets/svg/WhiteShape.svg" alt="White Shape" className="w-full h-auto" />
+                                </div>
+                                <div className="px-4">
+                                    <p className="headline-h5 font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum perspiciatis exercitationem distinctio numquam in quos sunt officiis illo aut sequi commodi.</p>                                </div>
                             </div>
                         </div>
-
                     )}
 
                     <div className="hidden xl:block relative bg-[url('/assets/svg/WhiteShape.svg')] h-[1860px] bg-no-repeat bg-cover">
