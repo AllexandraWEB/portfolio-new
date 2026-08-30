@@ -15,7 +15,7 @@ const HeroSection = () => {
                     </div>
                 </div>
 
-                <div className="mt-auto pb-10 grid grid-cols-1 xl:grid-cols-4">
+                <div className="mt-auto pb-26 grid grid-cols-1 xl:grid-cols-4">
                     <div className="flex flex-col gap-4">
                         <h3 className="uppercase text-sm-regular">
                             Front-end Engineer
