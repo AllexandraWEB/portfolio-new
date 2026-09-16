@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import { GeistSans } from 'geist/font/sans'
 
 import "./globals.css"
-import { ThemeProvider } from "@/src/components/theme-provider"
+// import { ThemeProvider } from "@/src/components/theme-provider"
 import { GridOverlay } from "@/src/components/(layout)/grid-overlay";
 import CoordinatesOverlay from "../components/(layout)/coordinates-overlay";
 import ScrollProgress from "../components/(layout)/scroll-progress";
+import ReactLenis from "lenis/react";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://example.com"),
@@ -53,10 +54,13 @@ export default function RootLayout({
       className={GeistSans.className}
     >
       <body>
-        <GridOverlay />
-        <CoordinatesOverlay />
-        <ScrollProgress />
-        <ThemeProvider>{children}</ThemeProvider>
+        <ReactLenis root>
+          <GridOverlay />
+          <CoordinatesOverlay />
+          {/* <ScrollProgress /> */}
+          {/* <ThemeProvider>{children}</ThemeProvider> */}
+          {children}
+        </ReactLenis>
       </body>
     </html>
   )
