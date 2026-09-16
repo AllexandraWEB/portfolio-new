@@ -73,13 +73,13 @@ export default function CoordinatesOverlay() {
     return (
         <div
             aria-hidden="true"
-            className="pointer-events-none fixed inset-x-0 bottom-5 z-50"
+            className="pointer-events-none fixed inset-x-0 bottom-5 z-50 mix-blend-difference"
         >
             <div
                 className={
                     isMobile
-                        ? "mx-auto grid h-10 grid-cols-4 px-4"
-                        : "mx-auto grid h-10 max-w-360 grid-cols-4"
+                        ? "mx-auto grid h-10 grid-cols-4 px-4 text-white"
+                        : "mx-auto grid h-10 max-w-360 grid-cols-4 text-white"
                 }
             >
                 {/* Column 1 */}
