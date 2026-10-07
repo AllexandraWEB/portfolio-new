@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 
-const MOBILE_BREAKPOINT = 768;
+const TabletBreakpoint = 1024;
 
-export function useIsMobile() {
-  const [isMobile, setIsMobile] = useState(false);
+export function useIsTablet() {
+  const [isTablet, setIsTablet] = useState(false);
 
   useEffect(() => {
     if (typeof window === "undefined") {
@@ -11,14 +11,14 @@ export function useIsMobile() {
     }
 
     const mediaQuery = window.matchMedia(
-      `(max-width: ${MOBILE_BREAKPOINT - 1}px)`,
+      `(max-width: ${TabletBreakpoint - 1}px)`,
     );
 
     const handleChange = (event: MediaQueryListEvent) => {
-      setIsMobile(event.matches);
+      setIsTablet(event.matches);
     };
 
-    setIsMobile(mediaQuery.matches);
+    setIsTablet(mediaQuery.matches);
 
     if (typeof mediaQuery.addEventListener === "function") {
       mediaQuery.addEventListener("change", handleChange);
@@ -29,7 +29,7 @@ export function useIsMobile() {
     return () => mediaQuery.removeListener(handleChange);
   }, []);
 
-  return isMobile;
+  return isTablet;
 }
 
-export default useIsMobile;
+export default useIsTablet;
