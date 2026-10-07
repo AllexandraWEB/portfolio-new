@@ -58,7 +58,6 @@ export default function RootLayout({
           <GridOverlay />
           <CoordinatesOverlay />
           {/* <ScrollProgress /> */}
-          {/* <ThemeProvider>{children}</ThemeProvider> */}
           {children}
         </ReactLenis>
       </body>

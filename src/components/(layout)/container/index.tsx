@@ -1,33 +1,39 @@
-import { cn } from "@/src/lib/utils";
+import { cn } from "@/src/lib/utils"
 
 type ContainerProps = {
-  children: React.ReactNode;
-  className?: string;
-  outer?: string;
-  as?: React.ElementType;
-  id?: string;
-  global?: boolean;
-};
+  children: React.ReactNode
+  className?: string
+  outer?: string
+  as?: React.ElementType
+  id?: string
+  global?: boolean
+}
 
 export default function Container({
   id,
   children,
   className,
   outer,
-  as: Component = "div",
+  as: Component = 'div',
   global,
 }: ContainerProps) {
   return (
-    <div className={outer} id={id}>
+    <div 
+      className={cn(
+        'w-full px-7 md:px-10', 
+        outer
+      )} 
+      id={id}
+    >
       <Component
         className={cn(
-          `container max-w-360 px-4 xl:px-0 mx-auto`,
-          global ? "flex flex-col gap-24" : "",
+          `w-full max-w-360 mx-auto grid-vars`,
+          global ? 'flex flex-col gap-24' : '',
           className
         )}
       >
         {children}
       </Component>
     </div>
-  );
+  )
 }
